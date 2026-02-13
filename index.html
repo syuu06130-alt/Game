@@ -970,7 +970,7 @@ function buildMap() {
 
   // Barrel
   const barrelMat = new T.MeshLambertMaterial({ color: 0x445566 });
-  [[−13,0,5],[13,0,5],[0,0,4],[−7,0,−3],[7,0,−3]].forEach(([x,y,z]) => {
+  [[-13,0,5],[13,0,5],[0,0,4],[-7,0,-3],[7,0,-3]].forEach(([x,y,z]) => {
     const b = new T.Mesh(new T.CylinderGeometry(0.4, 0.4, 1.2, 8), barrelMat);
     b.position.set(x, 0.6, z);
     b.castShadow = true;
